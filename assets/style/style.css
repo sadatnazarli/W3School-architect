@@ -92,22 +92,96 @@ nav {
 
 .about {
   padding: 4rem 1rem 0 1rem;
-
+  margin: 1rem;
   p {
+    margin-bottom: 25px;
     color: rgba(0, 0, 0, 0.705);
   }
 }
 .people {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+}
+button {
+  background-color: lightgray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
-  .person {
-    width: 100%;
+.person {
+  width: 100%;
+}
 
-    img {
-      width: 100%;
-    }
-  }
+.person img {
+  width: 100%;
+}
+
+.person h3,
+.person p {
+  margin-top: 10px;
+  text-align: left;
+}
+.contact {
+  text-align: left; /* Change to left alignment */
+  padding: 50px 0;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.contact .line {
+  height: 2px;
+  width: 100%;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex; /* Remove center alignment for form elements */
+  flex-direction: column;
+}
+
+.contact form input {
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.contact form button {
+  padding: 15px 30px;
+  background-color: #0095ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+img {
+  width: 100%;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
